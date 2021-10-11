@@ -1,3 +1,0 @@
-Aperta SHIFT + Botão direito.
-'Abrir janela de comando aqui'
-comando -> node app.js
