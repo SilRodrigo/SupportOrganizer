@@ -25,7 +25,7 @@ node app.js
 a porta padrão está configurada para 8080, mas você pode altera-la no arquivo app.js.
 
 Foi criado um usuário padrão:
-Usuário: Teste
+Usuário: Teste <br>
 Senha: 1234
 
 Nessa aplicação disponibilizada não foram incrementados os cadastros pela aplicação, ou seja,
