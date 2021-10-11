@@ -16,6 +16,8 @@ npm install express
 npm install cookie-parser
 npm install mongoose
 
+Depois siga as instruções da pasta "DocumentosMongoDB" para adicionar alguns pré-cadastros para o sistema.
+
 após isso basta rodar a aplicação com o comando:
 
 node app.js
