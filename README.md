@@ -6,7 +6,7 @@ A app.js que recebe as requisições e a core.js que trata e devolve informaçõ
 
 Você vai precisar instalar NodeJs e MongoDB (Sugiro instalar o MongoDBCompass também).
 
-https://nodejs.org/en/
+https://nodejs.org/en/ <br>
 https://www.mongodb.com/try/download/community
 
 após essas instalações, na pasta da aplicação
