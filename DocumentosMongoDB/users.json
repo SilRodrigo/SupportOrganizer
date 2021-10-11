@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "5fedc7c5d79cf9227406c645"
+  },
+  "name": "Teste",
+  "password": "1234",
+  "__v": 0,
+  "sessionKey": "5fedc7c5d79cf9227406c645288 Tue, 12 Oct 2021 18:00:36 GMT;",
+  "supportCompany": 1
+}]

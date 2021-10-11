@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "5ff47b73ddcbaf0e6caee507"
+  },
+  "name": "Empresa de Teste Com nome Ficticio LTDA",
+  "shortName": "Empresa de Teste",
+  "supportCompany": 1,
+  "__v": 0
+}]

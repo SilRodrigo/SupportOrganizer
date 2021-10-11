@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="view/assets/css/login.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ORGANIZADOR DE CHAMADOS</title>
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="view/assets/img/logo.png" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+            <form id="logar">
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                <input type="password" id="password" class="fadeIn third" name="login" placeholder="senha">
+                <input type="submit" class="fadeIn fourth point" value="Logar">
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" onclick="esqueci()" href="#">Esqueci minha senha</a>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        document.getElementById('logar').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            let data = new Object();
+            data.name = document.getElementById('login').value;
+            data.password = document.getElementById('password').value;
+            let response = await fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                },
+                body: JSON.stringify(data)
+            });
+            let retorno = await response.json();
+            console.log(retorno);
+            if (retorno.status === 200) {
+                autorizado();
+            } else {
+                console.log(retorno)
+                alert('SENHA OU USUÁRIO INCORRETO')
+            }
+        })
+
+        function esqueci() {
+            alert('AZAR O SEU!');
+        }
+
+        function autorizado() {
+            fetch('/main', {
+                method: 'GET'
+            }).then(e => {
+                window.location.href = '/main';
+            }).catch(e => {
+                window.location.href = '/login';
+            });
+        }
+
+    </script>
+</body>
+
+</html>
