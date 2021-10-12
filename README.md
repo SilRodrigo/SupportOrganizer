@@ -1,6 +1,7 @@
-Essa é uma aplicação bem simples para controlar abertura e encerramentos de chamados
+**SupportOrganizer** é uma aplicação bem simples para controlar abertura e encerramentos de chamados <br>
 para a área de suporte de uma empresa entre varios colaboradores.<br>
-Se um colaborador abrir um chamado todos os outros logados também receberão a notificação.<br>
+
+Se um colaborador abre um chamado todos os outros logados também recebem a notificação.<br>
 Também é possível adaptar o código para receber requisições de chamados de fontes externas.
 
 ![Alt Text](https://github.com/SilRodrigo/SupportOrganizer/blob/main/Demo/demo1.gif)
